@@ -1,0 +1,346 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+    /* font-family: 'Almarai', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar-items ul{
+    margin-right:3rem ;
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+    flex-wrap: wrap;
+    /* list-style: none; */
+}
+
+.navbar-items ul li{
+    list-style: none;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.navbar-items ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.navbar-items ul li a:hover{
+    color:rgb(189, 59, 245) ;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.heading span{
+    color: rgb(189, 59, 245);
+}
+.heading p{
+    font-size: 3rem;
+}
+
+.image img{
+    border-radius: 4rem;
+    height: 36rem;
+    margin-top: 2rem;
+}
+.logo{
+    font-size: 2rem;
+    margin-left: 18rem;
+    font-weight: bold;
+}
+.logo span{
+    color: rgb(189, 59, 245);
+}
+
+/* About section */
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin-top: 3rem;
+    width: 100%;
+}
+.image1{
+    flex-basis: 35%;
+    /* margin-left: 6rem; */
+    margin:2rem;
+}
+.image1 img{
+    /* width: 100%; */
+    border-radius: 2rem;
+}
+.about-content{
+    flex-basis: 60%;
+    /* margin-right: 3rem; */
+    margin:2rem;
+}
+
+.about-content h1{
+    font-size: 3.5rem;
+
+}
+.titles{
+    display: flex;
+    margin-top: 1rem;
+}
+.title-links{
+    margin-right: 3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+}
+.title-links::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: rgb(189, 59, 245);
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.title-links.active-link::after{
+    width: 50%;
+}
+.title-contents ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.title-contents ul li span{
+    color: rgb(201, 94, 247);
+    font-size: 14px;
+}
+.title-contents{
+    margin-top: 2rem;
+    display: none;
+}
+.title-contents.active-tab{
+    display: block;
+}
+hr{
+    height: 0.7rem;
+    background-color: rgb(43, 41, 41);
+    border: none;
+    margin: 2rem 0rem;
+}
+
+/* SERVICE SECTION  */
+
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+.service-heading{
+    text-align: center;
+}
+.service-heading h1{
+    margin: 3rem 0rem;
+}
+.service-types{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.service-1{
+    height: 18rem;
+    width: 20rem;
+    background-color: rgb(43, 41, 41);
+    border-radius: 2rem;
+}
+.service-1:hover{
+    background-color: rgb(189, 59, 245);
+}
+.service-1:hover a{
+    color: black;
+}
+.service-1 h2{
+    text-align: center;
+    margin: 2rem 0rem;
+}
+.service-1 p{
+    margin: 2rem 2rem;
+}
+
+.service-1 a{
+    text-align: center;
+   color: grey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Work section */
+
+.work{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+.work-heading{
+    /* text-align: center; */
+    /* margin: 2rem 0rem; */
+}
+.work-heading h1{
+    text-align: center;
+    margin-top: 3rem;
+}
+.work-types{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 0rem;
+}
+.work-1{
+    height: 21rem;
+    width: 23rem;
+    background-color: grey;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    /* margin-top: 2rem; */
+}
+.work-1 h2{
+    text-align: center;
+    margin-top: 1rem;
+}
+.work-1 p{
+    text-align: center;
+    margin-top: 1rem;
+}
+.work-1 a{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* contact section */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.cont-1{
+    /* background-color: grey; */
+    /* margin: 2rem; */
+    padding: 2rem;
+}
+.cont-1 h1{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.cont-1 p{
+    padding: 1rem;
+}
+.icons{
+    display: flex;
+}
+.cont-1 button{
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(189, 59, 245);
+    margin: 2rem;
+    color: white;
+}
+.cont-1 button:hover{
+    background-color:rgb(189, 59, 245) ;
+    border: 2px solid white;
+    color: white;
+}
+.icons li{
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.cont-1 .mail, .no{
+    display: flex;
+}
+.mail i{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.no i{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.cont-2{
+    /* background-color: grey; */
+    /* margin: 2rem; */
+    padding: 2rem;
+    width: 40%;
+    
+}
+.cont-2 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-2 form input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+}
+.cont-2 form input::placeholder{
+    color: white;
+}
+.cont-2 form textarea{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    
+}
+.cont-2 form textarea::placeholder{
+    color: white;
+}
+.cont-2 form button{
+    width: 20%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(189, 59, 245);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+/* footer */
+
+.footer{
+    height: 3rem;
+    background-color: rgb(43, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
